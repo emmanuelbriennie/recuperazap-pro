@@ -6,16 +6,37 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 160 30% 98%;
+    --foreground: 200 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 200 30% 12%;
+    --muted: 165 20% 94%;
+    --muted-foreground: 200 12% 42%;
+    --border: 165 18% 88%;
+    --primary: 152 62% 36%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 168 60% 42%;
+    --accent-foreground: 0 0% 100%;
+    --success: 152 62% 36%;
+    --warning: 38 92% 48%;
+    --danger: 0 72% 50%;
+    --radius: 0.9rem;
   }
- 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-  }
-}
 
-body {
-  font-family: 'Inter', sans-serif;
+  .dark {
+    --background: 200 32% 8%;
+    --foreground: 160 20% 96%;
+    --card: 200 30% 11%;
+    --card-foreground: 160 20% 96%;
+    --muted: 200 22% 16%;
+    --muted-foreground: 190 12% 66%;
+    --border: 200 20% 20%;
+    --primary: 152 58% 44%;
+    --primary-foreground: 200 32% 8%;
+    --accent: 168 55% 48%;
+    --accent-foreground: 200 32% 8%;
+  }
+
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; font-family: 'Inter', sans-serif; }
 }
